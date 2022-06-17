@@ -37,7 +37,7 @@
         window.onload = function maxGuess() {
             let N = prompt("Please enter the maximum number you want to guess", "Enter a number");
             if (isNaN(N)) {
-                alert("It isn't a number.\nPlease enter a number");
+                alert("It isnt Number.\nPlease enter a number");
                 maxGuess();
             }
             else if (N < 1) {
@@ -72,30 +72,30 @@
 
                     }
                     else if (parseInt(gnum) > parseInt(N)) {
-                        alert("That number is not in range, try again.);
+                        alert("Please enter a numberr 1 - " + N);
                     }
                     else if (found != undefined) {
-                        alert("You already guessed this number: " + gnum);
+                        alert("You already guessed this number " + gnum);
                     }
                     else if (N != null && N != "") {
 
                         if (gnum == num) {
                             guessed.push(gnum);
                             guessedNumber.value = guessed;
-                            result.value = "You got it! It took you "
-                                + guessed.length + " tries.";
+                            result.value = "CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+                                + guessed.length + " GUESS \n";
                         }
                         else if (gnum > num) {
 
                             guessed.push(gnum);
-                            result.value = ("Sorry! Try a smaller number.")
+                            result.value = ("OOPS SORRY!! TRY A SMALLER NUMBER")
                             guessField.value = gnum;
                             console.log(guessed);
                         }
                         else {
 
                             guessed.push(gnum);
-                            result.value = ("Sorry! Try a bigger number.")
+                            result.value = ("OOPS SORRY!! TRY A GREATER NUMBER")
                             guessField.value = gnum;
                             console.log(guessed);
                         }
@@ -108,4 +108,3 @@
 </body>
 
 </html>
-      
