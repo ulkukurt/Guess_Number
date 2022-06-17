@@ -1,4 +1,4 @@
-# Guess_Number_Mix
+# Guess_Number
 
 # Instructions
 
